@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+/* Root variables */
+:root {
+    --primary-color: #08614E; /* Teal */
+    --accent-color: #E0F2F1; /* Light blue */
+    --dark-gray: #333333;
+    --light-gray: #CCCCCC;
+    --white: #FFFFFF;
+    --background-color: var(--white);
+    --text-color: var(--dark-gray);
+    --emphasis-color: var(--primary-color);
+    --primary-bg-subtle: var(--accent-color);
+    --unique-default-color: #28a745;
+    --unique-hover-color: #218838;
+}
+
+body{
+    font-family: 'Poppins' 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* background-image: url(../image/background_logo.png); */
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+}
+
+/* FrontEnd Navbar logo */
+a img{
+    max-width: 150px;
+    min-width: 150px;
+}
+
+/* For Navabr toggler button */
+
+.navbar-toggler-icon{
+    width: 20px;
+    height: 20px;
+}
+
+.centered-toggler {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0; 
+    width: 40px; 
+    height: 40px;
+}
+
+.collapse ul li{
+    border-radius: 5px;
+}
+
+/* hover the link */
+.custom-navbar .nav-link {
+    position: relative;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 2px solid transparent; /* Initial border, transparent */
+    transition: border-color background-color  0.3s ease;
+    color:var(--primary-color);
+    font-weight: 400;
+   
+}
+
+.custom-navbar .nav-link:hover {
+    border-color: #f0f0f0; 
+    text-decoration: none;
+    color:  #f0f0f0;
+    background-color:var(--primary-color);
+}
+
+
+/* for register.php and login.php design */
+
+.form-container {
+    position: relative;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+.form-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.form-header h2 {
+    margin-bottom: 10px;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 7px;
+}
+.form-group .form-control {
+    padding-left: 40px;
+}
+.form-group .form-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.btn-custom {
+    background-color:  #077a61;
+    border: none;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+.btn-custom:hover {
+    background-color: var(--primary-color);
+}
+.form-footer {
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* Desing for display card */
+
+.card {
+    border: none;
+    margin-bottom: 30px;
+}
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+.rating {
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 5px;
+}
+.price {
+    font-size: 1.5rem;
+    color: #dc3545;
+}
+.location {
+    color: #007bff;
+}
+.stars {
+    color: #f8d64e;
+}
+
+/* page search design */
+.input-from-field{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-control:focus {
+    border-color: #ced4da;
+    box-shadow: var(--primary-color);
+    border-radius: 0px;
+    
+}
+
+
